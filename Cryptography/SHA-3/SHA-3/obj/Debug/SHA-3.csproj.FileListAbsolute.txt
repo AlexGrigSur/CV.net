@@ -1,0 +1,14 @@
+C:\Users\Alex\source\repos\SHA-3\SHA-3\bin\Debug\SHA-3.exe.config
+C:\Users\Alex\source\repos\SHA-3\SHA-3\bin\Debug\SHA-3.exe
+C:\Users\Alex\source\repos\SHA-3\SHA-3\bin\Debug\SHA-3.pdb
+C:\Users\Alex\source\repos\SHA-3\SHA-3\obj\Debug\SHA-3.csprojAssemblyReference.cache
+C:\Users\Alex\source\repos\SHA-3\SHA-3\obj\Debug\SHA-3.csproj.CoreCompileInputs.cache
+C:\Users\Alex\source\repos\SHA-3\SHA-3\obj\Debug\SHA-3.exe
+C:\Users\Alex\source\repos\SHA-3\SHA-3\obj\Debug\SHA-3.pdb
+C:\Users\Alex\Desktop\GitHub\C_Sharp_Private\SHA-3\SHA-3\bin\Debug\SHA-3.exe.config
+C:\Users\Alex\Desktop\GitHub\C_Sharp_Private\SHA-3\SHA-3\bin\Debug\SHA-3.exe
+C:\Users\Alex\Desktop\GitHub\C_Sharp_Private\SHA-3\SHA-3\bin\Debug\SHA-3.pdb
+C:\Users\Alex\Desktop\GitHub\C_Sharp_Private\SHA-3\SHA-3\obj\Debug\SHA-3.csprojAssemblyReference.cache
+C:\Users\Alex\Desktop\GitHub\C_Sharp_Private\SHA-3\SHA-3\obj\Debug\SHA-3.csproj.CoreCompileInputs.cache
+C:\Users\Alex\Desktop\GitHub\C_Sharp_Private\SHA-3\SHA-3\obj\Debug\SHA-3.exe
+C:\Users\Alex\Desktop\GitHub\C_Sharp_Private\SHA-3\SHA-3\obj\Debug\SHA-3.pdb

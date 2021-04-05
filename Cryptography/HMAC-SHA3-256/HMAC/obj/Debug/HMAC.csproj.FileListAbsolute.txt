@@ -1,0 +1,14 @@
+C:\Users\Alex\source\repos\HMAC\HMAC\bin\Debug\HMAC.exe.config
+C:\Users\Alex\source\repos\HMAC\HMAC\bin\Debug\HMAC.exe
+C:\Users\Alex\source\repos\HMAC\HMAC\bin\Debug\HMAC.pdb
+C:\Users\Alex\source\repos\HMAC\HMAC\obj\Debug\HMAC.csprojAssemblyReference.cache
+C:\Users\Alex\source\repos\HMAC\HMAC\obj\Debug\HMAC.csproj.CoreCompileInputs.cache
+C:\Users\Alex\source\repos\HMAC\HMAC\obj\Debug\HMAC.exe
+C:\Users\Alex\source\repos\HMAC\HMAC\obj\Debug\HMAC.pdb
+C:\Users\Alex\Desktop\GitHub\C_Sharp_Private\HMAC\HMAC\bin\Debug\HMAC.exe.config
+C:\Users\Alex\Desktop\GitHub\C_Sharp_Private\HMAC\HMAC\bin\Debug\HMAC.exe
+C:\Users\Alex\Desktop\GitHub\C_Sharp_Private\HMAC\HMAC\bin\Debug\HMAC.pdb
+C:\Users\Alex\Desktop\GitHub\C_Sharp_Private\HMAC\HMAC\obj\Debug\HMAC.csprojAssemblyReference.cache
+C:\Users\Alex\Desktop\GitHub\C_Sharp_Private\HMAC\HMAC\obj\Debug\HMAC.csproj.CoreCompileInputs.cache
+C:\Users\Alex\Desktop\GitHub\C_Sharp_Private\HMAC\HMAC\obj\Debug\HMAC.exe
+C:\Users\Alex\Desktop\GitHub\C_Sharp_Private\HMAC\HMAC\obj\Debug\HMAC.pdb

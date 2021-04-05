@@ -1,0 +1,40 @@
+version: '3.1'
+
+services: 
+
+  db:
+    image: mariadb
+    container_name: db
+    ports: 
+      - 3306:3306
+    environment: 
+      MYSQL_ROOT_PASSWORD: 146923785
+    volumes: 
+      - /var/lib/mysql
+    restart: always
+    mem_limit: 300m
+
+  pma:
+    image: phpmyadmin
+    container_name: pma
+    links: 
+      - db
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 1
+      MYSQL_ROOT_PASSWORD: 146923785
+    mem_limit: 300m
+  
+  aspnetapp:
+    image: justalex50/czechfitnessapi
+    container_name: czechfitnessapi
+    restart: always
+    ports:
+      - 5000:5000
+    environment:
+      - ASPNETCORE_URLS=http://+:5000;
+    mem_limit: 300m
