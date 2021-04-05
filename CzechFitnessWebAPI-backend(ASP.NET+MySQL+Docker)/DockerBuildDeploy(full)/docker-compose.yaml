@@ -30,7 +30,7 @@ services:
     mem_limit: 300m
   
   aspnetapp:
-    build: ./IPISserver
+    build: ../Server
     container_name: aspnetapp
     restart: always
     ports:
