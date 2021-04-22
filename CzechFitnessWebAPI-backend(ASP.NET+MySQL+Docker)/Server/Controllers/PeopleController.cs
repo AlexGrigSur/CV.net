@@ -8,64 +8,53 @@ namespace IPISserver.Controllers
 {
     [ApiController]
     [Route("people/")]
-    public class PeopleController : ControllerBase
+    public class PeopleController<T> : ControllerBase, ITableController<T> where T: PeopleModel
     {
         private PeopleHandler handler = new PeopleHandler();
 
-        /// <summary>
-        /// Select all rows from `People` table (GET)
-        /// </summary>
         [HttpGet]
         public ActionResult GetAll()
         {
             string? result = handler.Select();
-            return (result==null)? NoContent() : Ok(result);
+            return (result==null)
+                ? NoContent() 
+                : Ok(result);
         }
 
-        /// <summary>
-        /// Select single row from `People` table by specific id (GET)
-        /// </summary>
-        /// <param name="id">select row id</param>
         [HttpGet("{id}")]
         public ActionResult GetSingle(int id) 
         { 
             string? result = handler.Select(id);
-            return (result==null)? NoContent() : Ok(result);
+            return (result==null)
+                ? NoContent() 
+                : Ok(result);
         }
 
-
-        /// <summary>
-        /// Insert row in `Genders` table by special body (POST)
-        /// </summary>
-        /// <param name="model">model of `People` table. Fill automatically from body JSON</param>
         [HttpPut]
-        public ActionResult Put([FromBody] PeopleModel model)
+        public ActionResult Put([FromBody] T model)
         {
             string? result = handler.InsertNewRow(model);
-            return (result == null) ? Ok() : NotFound(result);
+            return Int32.TryParse(result, out _) 
+                ? Ok(JsonConvert.SerializeObject(new { id= result})) 
+                : NotFound(result);
         }
 
-
-        /// <summary>
-        /// Update row in `People` table by special body (POST)
-        /// </summary>
-        /// <param name="model">model of `People` table. Fill automatically from body JSON</param>
         [HttpPost]
-        public ActionResult Post([FromBody] PeopleModel model) 
+        public ActionResult Post([FromBody] T model) 
         {
             string? result = handler.UpdateRow(model);
-            return (result==null)? Ok() : NotFound(result);
+            return (result==null)
+                ? Ok() 
+                : NotFound(result);
         }
 
-        /// <summary>
-        /// Delete row in `Genders` table by specific id (DELETE)
-        /// </summary>
-        /// <param name="id">Remove row id</param>
         [HttpDelete("{id}")]
         public ActionResult Delete(int id) 
         {
             string? result = handler.DeleteRow(id);
-            return (result==null)? Ok() : NotFound(result);
+            return (result==null)
+                ? Ok() 
+                : NotFound(result);
         }
     }
 }

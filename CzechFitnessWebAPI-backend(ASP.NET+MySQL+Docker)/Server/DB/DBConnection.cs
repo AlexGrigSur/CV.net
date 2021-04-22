@@ -52,7 +52,7 @@ namespace IPISserver.DataBase.Connection
         /// </summary>
         /// <param name="SQLcommand">sql command</param>
         /// <param name="paramsColl">parameters list</param>
-        public void ExecuteCommand(string SQLcommand, List<MySqlParameter> paramsColl = null)
+        public string ExecuteCommand(string SQLcommand, List<MySqlParameter> paramsColl = null)
         {
             command.CommandText = SQLcommand;
             command.Connection = connection;
@@ -64,6 +64,7 @@ namespace IPISserver.DataBase.Connection
             OpenConnection();
             command.ExecuteNonQuery();
             CloseConnection();
+            return command.LastInsertedId.ToString();
         }
         /// <summary>
         /// Execute SQL DataReader

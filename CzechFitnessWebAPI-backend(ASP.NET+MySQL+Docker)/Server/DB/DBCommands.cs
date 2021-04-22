@@ -1,10 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MySqlConnector;
-using Newtonsoft.Json;
 using IPISserver.DataBase.Connection;
 
 namespace IPISserver.DataBase
@@ -131,8 +127,7 @@ namespace IPISserver.DataBase
 
             try
             {
-                db.ExecuteCommand(sql, paramList);
-                return null;
+                return db.ExecuteCommand(sql, paramList);
             }
             catch(Exception e)
             {
